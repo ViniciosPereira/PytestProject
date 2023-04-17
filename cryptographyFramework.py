@@ -25,7 +25,7 @@ def decryptMessage(user, password, message):
         decryptedMessage = fernet.decrypt(message).decode() 
         return decryptedMessage
     except Exception:
-        print("Not  possible to decrypt!")    
+        print("Not possible to decrypt!")    
 
 def saveNewLine(message):
     file = open('message.txt', 'a')    
